@@ -1,0 +1,54 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Murata NCU18XH103F60RB
+#
+DEF NCU18XH103F60RB R 0 40 Y Y 1 L N
+F0 "R" 0 200 50 H V L CNN 
+F1 "NCU18XH103F60RB" 0 300 50 H V L CNN 
+F2 "Murata-NCU18-0.15-0-0-*" 0 400 50 H I L CNN 
+F3 "https://www.murata.com/en-eu/products/productdetail.aspx?partno=NCU18XH103F60RB" 0 500 50 H I L CNN 
+F4 "No" 0 600 50 H I L CNN "automotive"
+F5 "" 0 700 50 H I L CNN "automotive grade "
+F6 "3455K" 0 800 50 H I L CNN "b 25 100"
+F7 "3380K" 0 900 50 H I L CNN "b 25 50"
+F8 "3434K" 0 1000 50 H I L CNN "b 25 85"
+F9 "1%" 0 1100 50 H I L CNN "b tolerance"
+F10 "Res" 0 1200 50 H I L CNN "category"
+F11 "Passive Components" 0 1300 50 H I L CNN "device class L1"
+F12 "Resistors" 0 1400 50 H I L CNN "device class L2"
+F13 "Thermistors" 0 1500 50 H I L CNN "device class L3"
+F14 "THERMISTOR NTC" 0 1600 50 H I L CNN "digikey description"
+F15 "490-NCU18WB473D60RBTR-ND" 0 1700 50 H I L CNN "digikey part number"
+F16 "https://www.murata.com/products/productdata/8796835414046/NTHM02E.pdf?1437969828000" 0 1800 50 H I L CNN "footprint url"
+F17 "0.95mm" 0 1900 50 H I L CNN "height"
+F18 "RESC16080X80" 0 2000 50 H I L CNN "ipc land pattern name"
+F19 "Yes" 0 2100 50 H I L CNN "lead free"
+F20 "fb2902889dfeb777" 0 2200 50 H I L CNN "library id"
+F21 "Murata" 0 2300 50 H I L CNN "manufacturer"
+F22 "0.1mA" 0 2400 50 H I L CNN "max current"
+F23 "81-NCU18WB473D60RB" 0 2500 50 H I L CNN "mouser part number"
+F24 "0603" 0 2600 50 H I L CNN "package"
+F25 "10kΩ" 0 2700 50 H I L CNN "resistance"
+F26 "Yes" 0 2800 50 H I L CNN "rohs"
+F27 "NCU18" 0 2900 50 H I L CNN "series"
+F28 "+125℃" 0 3000 50 H I L CNN "temperature range high"
+F29 "-40°C" 0 3100 50 H I L CNN "temperature range low"
+F30 "1%" 0 3200 50 H I L CNN "tolerance"
+F31 "5V" 0 3300 50 H I L CNN "voltage rating"
+DRAW
+X 1 1 100 0 100 R 40 0 1 1 P 
+X 2 2 600 0 100 L 40 0 1 1 P 
+P 2 1 1 0 200 0 230 50 N
+P 2 1 1 0 230 50 280 -50 N
+P 2 1 1 0 280 -50 330 50 N
+P 2 1 1 0 330 50 380 -50 N
+P 2 1 1 0 380 -50 430 50 N
+P 2 1 1 0 430 50 480 -50 N
+P 2 1 1 0 480 -50 500 0 N
+P 2 1 1 0 220 -90 490 90 N
+P 2 1 1 0 220 -90 150 -90 N
+ENDDRAW
+ENDDEF
+#
+# End Library
