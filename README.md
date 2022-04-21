@@ -2,13 +2,9 @@
 
 Contributors: Max Ramer, Brandon Gray, Melinda Burns, Alina Shah, Arnav Gupta, Muheng Shen
 
-
-
 ## Goal
 
 Design, build, and program 10 temperature sensor nodes to measure temperature once an hour.  Nodes should last 6 months in the field.
-
-
 
 ## Roles
 
@@ -17,8 +13,6 @@ Hardware Engineers: Muheng & Arnav
 Firmware Engineers: Brandon & Max
 
 Software Engineers: Mels & Alina
-
-
 
 ## Tasks
 
@@ -84,11 +78,17 @@ Software Engineers: Mels & Alina
 
 
 
+## Program Execution
+
+```
+![](diagrams/program_flow_diagram.drawio.svg)
+```
+
+
+
 ## Status Updates
 
 #### Tuesday 4/26
-
-
 
 #### Thursday 4/28
 
