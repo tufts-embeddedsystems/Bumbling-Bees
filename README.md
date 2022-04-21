@@ -80,9 +80,7 @@ Software Engineers: Mels & Alina
 
 ## Program Execution
 
-```
-![](diagrams/program_flow_diagram.drawio.svg)
-```
+<img title="" src="diagrams/program_flow_diagram.drawio.svg" alt="" width="339">
 
 
 
