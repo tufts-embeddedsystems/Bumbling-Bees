@@ -23,9 +23,10 @@ struct packet {
 	int32_t thermistor_temp; // Temp in degrees C, -2^31 is unused
 	uint8_t battery; // Percentage of battery capacity, 0 to 100, 255 means no battery or no measurement
 	uint16_t data_len; // 0 for us
-	//uint8_t teamdata[data_len];
+	//uint8_t teamdata[2];
 } __attribute__((packed));
 
+const int PACKET_SIZE = 8 + 4 + 4 + 1 + 2;
 
 // Function declarations
 void wifi_init(void);
@@ -86,11 +87,20 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
 
         // Construct packet
-        struct packet data_packet = {1650992374, 20000, 21000, 50, 0};
+        struct packet data_packet = {1650992374, 20000, 21000, 80, 0};
         void *data_ptr = &data_packet;
 
+        /*
+        // Print hex data
+        char *test = data_ptr;
+        for (int i = 0; i < PACKET_SIZE; i++) {
+            printf("%x ", test[i]);
+        }
+        printf("\n");
+        */
+
         // Send the message
-        msg_id = esp_mqtt_client_publish(client, "/nodes/bumbling-bees/test3", (char *)data_ptr, sizeof(struct packet), 1, 0);
+        msg_id = esp_mqtt_client_publish(client, "nodes/bumbling-bees/test3", (char *)data_ptr, PACKET_SIZE, 1, 0);
         ESP_LOGI(TAG, "sent publish successful, msg_id=%d", msg_id);
 
         break;
