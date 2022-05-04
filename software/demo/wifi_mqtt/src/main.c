@@ -87,7 +87,7 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
 
         // Construct packet
-        struct packet data_packet = {1650992374, 20000, 21000, 80, 0};
+        struct packet data_packet = {1650992374, 20000, 21000, 13, 0};
         void *data_ptr = &data_packet;
 
         /*
