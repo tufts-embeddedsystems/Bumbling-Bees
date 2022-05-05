@@ -18,10 +18,7 @@
 
 // Address of MQTT server
 #define BROKER_URI "mqtt://en1-pi.eecs.tufts.edu"
-#define NODE_PATH "nodes/bumbling-bees/node1"
-
-// How long to sleep between temp reads in seconds
-#define READ_INTERVAL 30
+#define NODE_PATH "nodes/bumbling-bees/node2"
 
 //I2C SENSOR//
 #define I2C_MASTER_SCL_IO           33      /*!< GPIO number used for I2C master clock */
@@ -195,7 +192,10 @@ static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_
         ESP_ERROR_CHECK(example_disconnect());
 
         // Sleep
-        esp_sleep_enable_timer_wakeup(READ_INTERVAL * 1000000);
+        uint64_t microseconds = 1000000;
+        uint64_t seconds = 3600;
+        uint64_t sleep_time = seconds * microseconds;
+        esp_sleep_enable_timer_wakeup(sleep_time);
         esp_deep_sleep_start();
         break;
 
